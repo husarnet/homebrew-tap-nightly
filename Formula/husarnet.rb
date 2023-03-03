@@ -1,15 +1,15 @@
-class HusarnetMacos2064Arm64 < Formula
+class Husarnet < Formula
   desc "P2P VPN"
   homepage "https://husarnet.com"
-  url "https://nightly.husarnet.com/husarnet-macos-2.0.64-arm64.tar.gz"
-  sha256 "9eeb21607bb478e3322b119afcc23be4e1352598b4ffea497442dfb7985b2571"
+  url "https://nightly.husarnet.com/husarnet-macos-2.0.72-arm64.tar.gz"
+  sha256 "60bace0a1b27cbe96ae86bcf2e2e31131fcf21fcc994075e9cee1f3c9caec224"
   license ""
 
   # depends_on "cmake" => :build
 
   def install
     system "mv husarnet-macos-arm64 husarnet"
-    system "mv husarnet-daemon-macos-arm64 husarnet-daemon"
+    system "mv husarnet-daemon-unix-macos_arm64 husarnet-daemon"
     bin.install "husarnet"
     bin.install "husarnet-daemon"
   end
