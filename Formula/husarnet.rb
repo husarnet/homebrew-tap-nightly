@@ -10,7 +10,7 @@ class Husarnet < Formula
     bin.install "husarnet-macos-arm64" => "husarnet"
     bin.install "husarnet-daemon-unix-macos_arm64" => "husarnet-daemon"
     # will hopefully install the service in launchd
-    system "#{bin}/husarnet", "daemon", "service-install"
+    # system "#{bin}/husarnet", "daemon", "service-install"
   end
 
   test do
