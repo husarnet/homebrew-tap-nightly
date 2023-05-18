@@ -11,10 +11,10 @@ class Husarnet < Formula
     bin.install "husarnet-daemon-unix-macos_arm64" => "husarnet-daemon"
   end
 
-  def post_install
-    print "Will attempt to install the service. This requires sudo privileges."
-    system "sudo", "#{bin}/husarnet", "daemon", "service-install"
-  end
+  # def post_install
+  #   print "Will attempt to install the service. This requires sudo privileges."
+  #   system "sudo", "#{bin}/husarnet", "daemon", "service-install"
+  # end
 
   def caveats
     <<~EOS
@@ -23,6 +23,14 @@ class Husarnet < Formula
       To start husarnet daemon and enable it on startup.
       Enjoy!
     EOS
+  end
+
+  service do
+    run opt_bin/"husarnet-daemon"
+    keep_alive true
+    require_root true
+    log_path var/"log/husarnet.log"
+    error_log_path var/"log/husarnet.err.log"
   end
 
   test do
