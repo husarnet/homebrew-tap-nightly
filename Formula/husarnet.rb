@@ -8,7 +8,7 @@ class Husarnet < Formula
 
   def install
     bin.install "husarnet-macos-arm64" => "husarnet"
-    bin.install "husarnet-daemon-unix-macos_arm64" => "husarnet-daemon"
+    bin.install "husarnet-daemon-macos-macos_arm64" => "husarnet-daemon"
   end
 
   # def post_install
