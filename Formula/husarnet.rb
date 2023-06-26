@@ -1,9 +1,9 @@
 class Husarnet < Formula
   desc "Low latency P2P VPN solution for robotics and more"
   homepage "https://husarnet.com"
-  url "https://nightly.husarnet.com/husarnet-macos-2.0.168-arm64.tar.gz"
-  version "2.0.168"
-  sha256 "c67902a92d4e3cfd82024d735450d6166c06bf39506283f3ba8b128ab9914120"
+  url "https://nightly.husarnet.com/husarnet-macos-2.0.169-arm64.tar.gz"
+  version "2.0.169"
+  sha256 "384b7a6f5bbb4c791427d6c24454bade73946fdfe3f705a5b4471ed0b062e67b"
   license ""
 
   def install
