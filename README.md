@@ -5,7 +5,7 @@ Husarnet Formulae definitions for Homebrew package manager (nightly channel). Th
 ## How do I install these formulae?
 
 ```
-brew tap husarnet/tap-nightly
+brew tap "husarnet/tap-nightly"
 brew install husarnet
 ```
 
