@@ -1,6 +1,6 @@
 # husarnet/homebrew-tap
 
-Husarnet Formulae definitions for Homebrew package manager (nightly channel). There is also [husarnet/tap](stable channel).
+Husarnet Formulae definitions for Homebrew package manager (nightly channel). There is also [stable channel](https://github.com/husarnet/homebrew-tap).
 
 ## How do I install these formulae?
 
